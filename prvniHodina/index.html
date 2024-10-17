@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- deklarace reprezentuje typ dokumentu, aby ho prohlížeče správně zobrazilo -->
+<html lang="cs"> <!-- definice celého html souboru -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Základy - Tagy a Atributy</title>
+</head>
+<body> <!-- definice těla dokumentu -->
+<h1>HTML Základy: Tagy a Atributy</h1>
+<h3><a href="druhy.html">druhá stránka</a></h3>
+<p>Zde jsou ukázky základních tagů a atributů v HTML:</p>
+
+<h2>1. Nadpis (Heading)</h2>
+<p>HTML má 6 úrovní nadpisů, zde je příklad <code>&lt;h1&gt;</code>:</p>
+<div class="example">
+    <h1>Toto je hlavní nadpis</h1>
+</div>
+
+<h2>2. Odstavec (Paragraph)</h2>
+<p>Pro tvorbu textových bloků se používá <code>&lt;p&gt;</code>:</p>
+<div class="example">
+    <p>Toto je odstavec textu.</p>
+</div>
+
+<h2>3. Obrázek (Image)</h2>
+<p>Obrázky se vkládají pomocí tagu <code>&lt;img&gt;</code> s atributem <code>src</code> a <code>alt</code>:</p>
+<div class="example">
+    <img src="https://via.placeholder.com/150" alt="Ukázkový obrázek" width="150">
+</div>
+
+<h2>4. Odkaz (Link)</h2>
+<p>Odkazy na jiné stránky se tvoří pomocí <code>&lt;a&gt;</code> a atributu <code>href</code>:</p>
+<div class="example">
+    <a href="https://www.example.com">Toto je odkaz na Example.com</a>
+</div>
+
+<h2>5. Seznam (List)</h2>
+<p>Existují dva typy seznamů: nečíslovaný <code>&lt;ul&gt;</code> a číslovaný <code>&lt;ol&gt;</code>:</p>
+<div class="example">
+    <ul>
+        <li>Položka seznamu 1</li>
+        <li>Položka seznamu 2</li>
+    </ul>
+    <ol>
+        <li>Položka seznamu 1</li>
+        <li>Položka seznamu 2</li>
+    </ol>
+</div>
+
+<h2>6. Atributy</h2>
+<p>Atributy poskytují dodatečné informace o elementech. Například <code>class</code> definuje třídu:</p>
+<div class="example">
+    <p class="example">Tento odstavec má přiřazenou třídu "example".</p>
+</div>
+
+<h2>7. tabulky</h2>
+<p>Tabulky se vytváří pomocí tagu <code>&lt;table&gt;</code> a <code>&lt;tr&gt;</code> pro řádky:</p>
+<div class="example">
+    <table>
+        <tr>
+            <th>Sloupec 1</th>
+            <th>Sloupec 2</th>
+        </tr>
+        <tr>
+            <td>Hodnota 1</td>
+            <td>Hodnota 2</td>
+        </tr>
+    </table>
+</div>
+
+<h1>Block a inline</h1>
+<p>Elementy v HTML můžeme rozdělit do dvou základních kategorií: block a inline.</p>
+<h2>Block</h2>
+<p>Block elementy zabírají celou šířku stránky a vždy začínají na novém řádku. Příklady block elementů:</p>
+<ul>
+    <li><code>&lt;div&gt;</code></li>
+    <li><code>&lt;p&gt;</code></li>
+    <li><code>&lt;h1&gt;</code> až <code>&lt;h6&gt;</code></li>
+    <li><code>&lt;table&gt;</code></li>
+</ul>
+
+<h2>Inline</h2>
+<p>Inline elementy zabírají jen tolik místa, kolik potřebují a nezačínají na novém řádku. Příklady inline elementů:</p>
+<ul>
+    <li><code>&lt;span&gt;</code></li>
+    <li><code>&lt;a&gt;</code></li>
+    <li><code>&lt;img&gt;</code></li>
+    <li><code>&lt;strong&gt;</code> a <code>&lt;em&gt;</code></li>
+</ul>
+
+</body>
+</html>
