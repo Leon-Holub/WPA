@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Atributy</title>
+    <style>
+        .customBottomMargin {
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<h1>Atributy</h1>
+
+<h2>Atributy vázané k tagu</h2>
+<p>Tyto atributy jsou specifické pro určité HTML tagy:</p>
+<ul>
+    <li><code>&lt;a href="https://example.com"&gt;Odkaz&lt;/a&gt;</code> - <code>href</code> určuje URL, na kterou odkaz
+        směřuje.
+    </li>
+    <li><code>&lt;img src="obrazek.jpg" alt="Popis"&gt;</code> - <code>src</code> určuje cestu k obrázku,
+        <code>alt</code> poskytuje alternativní text pro obrázek.
+    </li>
+    <li><code>&lt;input type="text" value="Ukázka"&gt;</code> - <code>type</code> určuje typ vstupního pole,
+        <code>value</code> nastavuje výchozí hodnotu.
+    </li>
+</ul>
+
+<h2>Globální atributy</h2>
+<p>Tyto atributy mohou být použity na jakémkoli HTML elementu:</p>
+<ul>
+    <li><code>class</code> - Určuje jednu nebo více tříd pro element, které mohou být použity pro CSS styly.</li>
+    <li><code>id</code> - Určuje unikátní id pro element, které může být použito pro CSS styly nebo JavaScript.</li>
+    <li><code>style</code> - Určuje inline CSS styl pro element.</li>
+    <li><code>title</code> - Určuje dodatečné informace o elementu, které se zobrazí jako tooltip při najetí myší.</li>
+    <li><code>data-*</code> - Používá se k ukládání vlastních dat specifických pro stránku nebo aplikaci.</li>
+    <li><code>lang</code> - Definuje jazyk obsahu elementu (např. <code>lang="cs"</code> pro češtinu).</li>
+    <li><code>hidden</code> - Skryje element, aniž by ho odstranil z DOM.</li>
+    <li><code>draggable</code> - Určuje, zda lze prvek přetahovat (<code>draggable="true"</code>).</li>
+    <li><code>onclick</code> - Definuje JavaScriptovou akci při kliknutí na jakýkoli prvek.</li>
+</ul>
+
+<h2>Stylové vlastnosti pomocí atributu <code>style</code></h2>
+<ul>
+    <li>Změna barvy textu: <code>style="color: blue;"</code></li>
+    <li>Změna pozadí: <code>style="background-color: yellow;"</code></li>
+    <li>Změna zarovnání - align: <code>style="text-align: center;"</code></li>
+    <li>Změna zarovnání - float: <code>style="float: right;"</code></li>
+    <li>Změna zarovnání - display: <code>style="display: inline-block;"</code></li>
+    <li>Změna zarovnání - justify-content: <code>style="display: flex; justify-content: space-between;"</code></li>
+    <li>Změna mezery mezi prvky - margin: <code>style="margin: 20px;"</code></li>
+    <li>Změna vycpávky - padding: <code>style="padding: 15px;"</code></li>
+    <li>Změna velikosti textu: <code>style="font-size: 24px;"</code></li>
+    <li>Změna fontu - font family: <code>style="font-family: Arial, sans-serif;"</code></li>
+    <li>Změna tloušťky fontu - weight: <code>style="font-weight: bold;"</code></li>
+</ul>
+
+<h1>Příklady</h1>
+<h2>Specifické atributy</h2>
+<a href="https://example.com" class="customBottomMargin">Odkaz</a>
+<img src="#" alt="Popis" class="customBottomMargin">
+
+<h2>Globální atributy</h2>
+<div class="customBottomMargin" id="example" style="color: red;" title="Tooltip" onclick="alert('Klikli jste na div!')">Globální atributy</div>
+<div style="background: rebeccapurple">
+    <h1 id="textik" lang="cs">Text</h1>
+</div>
+
+<div class="customBottomMargin" hidden>Skrytý text pomocí atributu <code>hidden</code>.</div>
+<div draggable="true" class="customBottomMargin">Tento prvek lze přetahovat.</div>
+
+<h2>Použití stylových atributů v praxi</h2>
+<div style="color: blue; background-color: yellow; text-align: center; padding: 10px; margin: 20px;">
+    Tento text má modrou barvu, žluté pozadí, je zarovnaný na střed, má vnitřní vycpávku 10 pixelů a vnější mezeru 20 pixelů.
+</div>
+<div style="font-size: 24px; font-family: Arial, sans-serif; font-weight: bold;">
+    Tento text má velikost 24px, používá font Arial a je tučný.
+</div>
+<div style="display: flex; justify-content: space-between; background-color: lightgrey; padding: 15px;">
+    <span>První položka</span>
+    <span>Druhá položka</span>
+    <span>Třetí položka</span>
+</div>
+
+<nav>
+    <ul style="list-style: none; display:flex; gap: 20px">
+        <li><a href="#">Domů</a></li>
+        <li><a href="#">O nás</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+</nav>
+
+<details>
+    <summary style="cursor: pointer">Ukázka tagu summary</summary>
+    <p>Obsah</p>
+</details>
+
+</body>
+</html>
