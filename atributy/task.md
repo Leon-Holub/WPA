@@ -22,7 +22,6 @@ Vytvořte jednoduchou webovou stránku s názvem "Osobní profil", která bude o
         - **Zaoblené rohy** obrázku.
         - **Rámeček obrázku** s vaší oblíbenou barvou.
 
-**Úkol pro rychlejší studenty:**
 
 Vytvořte další sekci s názvem **"Moje zájmy"**, která bude obsahovat:
 
