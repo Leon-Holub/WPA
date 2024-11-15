@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formuláře</title>
+</head>
+<body>
+<h1>Ukázka formuláře</h1>
+<form action="https://www.leonholub.cz/" method="post"> <!-- method= get, post -->
+    <label for="name">Jméno:</label>
+    <input type="text" name="name" id="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <label for="password">Heslo:</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <label for="password2">Heslo znovu:</label>
+    <input type="password" name="password2" id="password2" required>
+    <br>
+    <label for="age">Věk:</label>
+    <input type="number" name="age" id="age" required>
+    <br>
+    <input type="submit">
+</form>
+
+<h1>Druhy inputů</h1>
+<form>
+    <input type="color">
+    <br>
+    <input type="date">
+    <br>
+    <input type="datetime-local">
+    <br>
+    <input type="file">
+    <br>
+    <input type="hidden">
+    <br>
+    <input type="text">
+    <br>
+    <input type="number">
+    <br>
+    <input type="range">
+    <br>
+    <input type="search">
+    <br>
+    <input type="password">
+    <br>
+    <input type="checkbox"> Checkbox
+    <br>
+    <input type="radio" name="radio"> Radio
+    <input type="radio" name="radio"> Radio 2
+    <br>
+    <textarea>
+
+    </textarea>
+    <select>
+        <option value="1">První</option>
+        <option value="2">Druhý</option>
+        <option value="3">Třetí</option>
+        <optgroup label="Skupina">
+            <option value="4">Čtvrtý</option>
+            <option value="5">Pátý</option>
+        </optgroup>
+    </select>
+</form>
+
+<h1>Hlavní atributy</h1>
+<ul>
+    <li>required - povinné</li>
+    <li>disabled - zakáže</li>
+    <li>readonly - pouze pro čtení</li>
+    <li>placeholder - text, který se zobrazí, když je input prázdný</li>
+    <li>value - výchozí hodnota</li>
+    <li>name - jméno inputu</li>
+    <li>type - typ inputu</li>
+    <li>for - odkaz na příslušný input</li>
+</ul>
+
+<h1>Validace v HTML</h1>
+<ul>
+    <li>required - povinné</li>
+    <li>minlength - minimální délka</li>
+    <li>maxlength - maximální délka</li>
+    <li>pattern - regulární výraz</li>
+    <li>min - minimální hodnota</li>
+    <li>max - maximální hodnota</li>
+    <li>step - krok</li>
+</ul>
+
+</body>
+</html>
