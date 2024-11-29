@@ -8,10 +8,12 @@ Vytvořte jednoduchou webovou stránku s názvem "Registrace", která bude obsah
 
 1. **Formulář pro registraci uživatele**:
     - Všechny vstupní pole musí být správně ošetřeny pomocí HTML validace (např. `required`, `type` atributy).
-    - Vytvořte formulář přesně podle přiloženého obrázku, který bude obsahovat následující pole:
-        - **Full name**: Textové pole pro celé jméno uživatele.
+    - Všechny `label` musí obsahivat `for` odkazující na příslušný input
+    - Vytvořte formulář podle přiloženého obrázku, který bude obsahovat následující pole:
+        - **Celé jméno**: Textové pole pro celé jméno uživatele.
         - **Email**: Pole pro emailovou adresu (`type="email"`).
-        - **Password**: Heslo (`type="password"`).
+        - **Oblíbený den**: Pole pro výběr ze dnů. Možnosti rozdělte do kategorií na všední dny a víkend. Nastavte aby se odesílaly hodnoty "Pondělí", "Úterý" atd. místo základního číslování.
+        - **Heslo**: Heslo (`type="password"`).
         - **Tlačítko**: Tlačítko pro odeslání formuláře s textem **Sign Up**.
     - Formulář bude také obsahovat odkaz **Login** pro přihlášení, umístěný pod tlačítkem odeslat.
 
@@ -22,6 +24,12 @@ Vytvořte jednoduchou webovou stránku s názvem "Registrace", která bude obsah
         - **Barvu tlačítka** na modrou a text bílý.
         - **Styl textu** a **rozložení prvků** přesně podle návrhu.
 
+3. **Základní HTML validace**
+   Formulář upravte tak, aby splňoval následující omezení:
+    - **Celé jméno:** Povinné pole s maximální délkou 50 znaků.
+    - **Email:** Povinné pole, musí být vyplněno správným formátem pro emailovou adresu.
+    - **Heslo:** Povinné pole, musí obsahovat minimálně 8 znaků.
+
 **Úkoly navíc:**
 
 1. **Přidejte Pole pro Opakování Hesla**:
@@ -31,4 +39,5 @@ Vytvořte jednoduchou webovou stránku s názvem "Registrace", která bude obsah
     - Přidejte vstupní pole pro zjištění věku (`type="number"`) nebo oblíbené barvy (`type="color"`) uživatele.
 
 3. **Přidejte Checkbox pro Přijetí Podmínek**:
-    - Přidejte checkbox, který uživatel musí zaškrtnout pro potvrzení, že souhlasí s podmínkami registrace (např. "Souhlasím s podmínkami").
+    - Přidejte checkbox, který uživatel musí zaškrtnout pro potvrzení, že souhlasí s podmínkami registrace (např. "
+      Souhlasím s podmínkami").
