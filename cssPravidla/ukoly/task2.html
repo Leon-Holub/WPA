@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvičení: Složitější struktura</title>
+    <style>
+        /*
+        ÚKOLY K PROCVIČENÍ CSS SELEKTORŮ:
+
+        1. Selektory na tagy:
+           - Nastavte barvu textu všech <p> na tmavě modrou.
+           - Změňte velikost písma všech <p> na 16px.
+
+        2. Selektory na rodiče a potomky:
+           - Nastavte zelenou barvu textu všem <a> uvnitř <nav>.
+           - Nastavte tmavě červenou barvu textu všem <p>, které jsou uvnitř <div> s třídou "info".
+
+        3. Selektory na přímé potomky:
+           - Nastavte tučný text všem <p>, které jsou přímými potomky <div> s třídou "nested".
+
+        4. Víceúrovňové zanoření:
+           - Nastavte kurzívu všem <p>, které jsou ve druhé úrovni zanoření uvnitř <div> s třídou "nested".
+           - Nastavte žluté pozadí všem <p>, které jsou ve třetí úrovni zanoření uvnitř <div> s třídou "nested".
+
+        5. Kombinace rodiče a specifického elementu:
+           - Nastavte oranžovou barvu všem <li>, které jsou přímými potomky <ul> uvnitř <nav>.
+
+        6. PRIORITA A PŘEPSÁNÍ PRAVIDEL:
+           - Nastavte <h1> červenou barvu, ale NESMÍTE ZMĚNIT existující pravidlo, které ho nastavuje na modrou!
+        */
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Webová stránka</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Domů</a></li>
+            <li><a href="#">O nás</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Hlavní článek</h2>
+        <p>Toto je úvodní odstavec článku.</p>
+        <div class="info">
+            <p>Toto je informační box.</p>
+            <ul>
+                <li>Položka 1</li>
+                <li>Položka 2</li>
+                <li>Položka 3</li>
+            </ul>
+        </div>
+        <div class="nested">
+            <div>
+                <p>První úroveň zanoření</p>
+                <div>
+                    <p>Druhá úroveň zanoření</p>
+                    <div>
+                        <p>Třetí úroveň zanoření</p>
+                    </div>
+                </div>
+            </div>
+            <p>Mimo toto zanoření</p>
+        </div>
+    </article>
+
+    <aside>
+        <h3>Vedlejší informace</h3>
+        <p>Krátká poznámka k hlavnímu obsahu.</p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 Složitá struktura</p>
+</footer>
+</body>
+</html>
