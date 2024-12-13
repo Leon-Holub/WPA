@@ -1,0 +1,34 @@
+/*
+       ÚKOLY PRO SAMOSTATNOU PRÁCI:
+
+       1. Nastavte:
+          - Červenou barvu textu pro všechny <h2>.
+          - Šedou barvu pro všechny <p> uvnitř <div> s třídou "content".
+
+       2. Zvýrazněte:
+          - Všechny <span> uvnitř <div> s třídou "highlights" tak, že text bude tučný.
+          - Použijte žluté pozadí pro <li>, které jsou přímými potomky <ul>.
+
+       3. Experimentujte s prioritou:
+          - Nastavte modrou barvu pro všechny <h1> v souboru.
+          - Přepište toto pravidlo a nastavte <h1> zelenou barvu, ale pouze pro <header>.
+          - Zkuste použít "!important" pro jinou barvu.
+
+       4. Pokročilé zanoření:
+          - Změňte barvu textu na oranžovou pro všechny <p>, které jsou ve třetí úrovni zanoření uvnitř <div>.
+
+       TIP: Testujte své styly v prohlížeči a sledujte výsledky!
+       */
+h2 {
+    color: red;
+}
+
+div.content p {
+    color: grey;
+}
+
+ul > li {
+    background: yellow;
+}
+
+
