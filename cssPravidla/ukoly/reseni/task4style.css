@@ -1,0 +1,43 @@
+/*
+ÚKOLY PRO STUDENTY:
+
+      1. Text "O mně":
+         - Nastavte, aby všechny nadpisy s textem "O mně" byly tučné.
+           To znamená, že musíte vytvořit vhodnou třídu a použít ji.
+
+      2. Stylizace textu:
+         - Změňte barvu nadpisu <h1> na červenou.
+
+      3. Navigace:
+         - Upravte navigaci tak, aby odkazy byly zarovnané vedle sebe (vodorovně).
+         - Změňte barvu odkazů v navigaci na zelenou.
+           Selektor napište specificky tzn. nestačí jen napsat li{} a a{}
+
+      ÚKOLY NAVÍC:
+      1. Obrázek:
+         - Nastavte obrázku pevnou šířku 200px a zaoblené rohy.
+         - Nastavte obrázku stín (shadow) - offset x a y 5px, blur-radius
+ */
+
+.fs-bold {
+    font-weight: bold;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+
+    li > a {
+        color: green;
+    }
+}
+
+img {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: black 5px 5px 20px;
+}
+
+h1 {
+    color: red;
+}
