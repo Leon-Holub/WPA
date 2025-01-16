@@ -4,20 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pseudo-classes a Pseudo-elements</title>
-  <!--
-       ÚKOLY PRO STUDENTY:
-
-       1. Pseudo-classes:
-          - Nastavte, aby odkazy změnily barvu na červenou při najetí myší (`:hover`).
-          - Nastavte, aby navštívené odkazy měly fialovou barvu (`:visited`).
-          - Stylizujte sudé položky seznamu jinou barvou než liché (`:nth-child()`).
-          - Zvýrazněte barvu textu vstupního pole (`:focus`).
-
-       2. Pseudo-elements:
-          - Přidejte ikonku (například hvězdičku) za nadpis `<h1>` pomocí `::after`.
-          - Změňte styl prvního řádku odstavce tak, aby byl tučný (`::first-line`).
-          - Zvýrazněte první písmeno odstavce, např. barvou a velikostí (`::first-letter`).
-   -->
+  <link rel="stylesheet" href="task5style.css">
 </head>
 <body>
 <header>
@@ -35,7 +22,7 @@
       <li>Čtvrtá položka</li>
     </ul>
     <p>
-      Navštivte <a href="https://example.com">tento odkaz</a> a najeďte na něj myší, abyste viděli změny.
+      Navštivte <a target="_blank" href="https://example.com">tento odkaz</a> a najeďte na něj myší, abyste viděli změny.
     </p>
     <form>
       <label for="name">Zadejte své jméno:</label>

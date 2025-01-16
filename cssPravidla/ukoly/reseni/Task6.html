@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procvičování CSS Selektorů</title>
+
+    <!--
+           ÚKOLY PRO STUDENTY:
+
+           1. Selektory:
+              - Nastavte barvu textu pro všechny nadpisy `<h2>` na modrou.
+              - Změňte barvu všech odkazů na zelenou.
+              - Přidejte horní odsazení (`margin-top`) pro všechny `<h2>` na 30px.
+
+           2. Rodiče a potomci:
+              - Nastavte, aby odstavce uvnitř `<section>` měly světle šedé pozadí a vnitřní odsazení (`padding`) 10px.
+              - Přidejte horní a spodní odsazení (`margin`) mezi jednotlivé odstavce na 15px.
+              - Změňte barvu odkazů pouze v seznamu `<ul>` na červenou a odstraňte jejich podtržení. (text-decoration)
+
+           3. Pseudo-třídy:
+              - Nastavte, aby sudé položky seznamu měly světle modré pozadí a průhlednost 0.8.
+              - Přidejte efekt hover na odkazy: při najetí myší změňte barvu textu na oranžovou a zvýrazněte je tlustším písmem.
+
+           4. Pseudo-elementy:
+              - Přidejte obsah "::before" k nadpisům `<h1>`: například text "🔥 ".
+              - Zvýrazněte první písmeno každého odstavce zvětšenou velikostí a barvou (např. červenou).
+              - Nastavte, aby první řádek každého odstavce měl tučné písmo.
+
+           5. Vytvoření třídy:
+              - Vytvořte vlastní třídu a přiřaďte ji na `<ul>` v sekci "Kontakt".
+              - Nastavte této třídě vlastnosti:
+                - Světle šedé pozadí.
+                - Rámeček tloušťky 1px s černou barvou.
+                - Vnitřní odsazení (`padding`) 10px.
+                - Horní odsazení (`margin-top`) 20px.
+
+           6. Základní stylování:
+              - Nastavte jednotné písmo pro celou stránku na Arial.
+              - Změňte zarovnání textu v `<header>` na střed.
+              - Nastavte pozadí stránky na béžovou barvu.
+       -->
+</head>
+<body>
+<header>
+    <h1>Procvičování Selektorů</h1>
+    <nav>
+        <ul>
+            <li><a href="#o-nas">O nás</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="o-nas">
+        <h2>O nás</h2>
+        <p>Toto je první odstavec v sekci O nás.
+            <br>A toto je další řádek, který nesmí být tučný!
+        </p>
+        <p>Další odstavec, který bude mít vlastní stylování.</p>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <ul class="ulClass">
+            <li>Telefon: +420 123 456 789</li>
+            <li>Email: info@example.com</li>
+        </ul>
+        <p>Pokud máte otázky, neváhejte nás kontaktovat.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 <a href="#">CSS Procvičování</a></p>
+</footer>
+</body>
+</html>
