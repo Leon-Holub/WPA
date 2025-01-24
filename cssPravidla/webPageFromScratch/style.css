@@ -91,7 +91,7 @@ header {
         }
 
         .action-button {
-            display: inline-flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             text-decoration: none;
@@ -100,9 +100,8 @@ header {
             padding: 20px 50px;
             border-radius: 50px;
 
-            &::after {
+            img {
                 margin-left: 10px;
-                content: "✔️";
             }
 
             &:hover {
