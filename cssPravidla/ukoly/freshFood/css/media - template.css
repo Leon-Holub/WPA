@@ -1,0 +1,31 @@
+/* Laptopy a běžné desktopy */
+@media (max-width: 1025px) {
+    body {
+        background: white;
+    }
+}
+
+/* Tablety a menší notebooky */
+@media (max-width: 992px) {
+    body {
+        background: green;
+    }
+}
+
+/* Telefony na šířku, menší tablety */
+@media (max-width: 768px) {
+    body {
+        background: yellow;
+    }
+}
+
+/* Telefony (mobilní zařízení) */
+@media (max-width: 576px) {
+    body {
+        background: red;
+    }
+}
+
+
+
+

@@ -1,0 +1,441 @@
+/* BARVY  ---------------- */
+
+/* 
+ČERNÁ #000000
+TYRKYSOVÁ #1abc9c
+ORANŽOVÁ f39c12
+BÍLÁ #ffffff
+ŠEDÁ #bdc3c7
+
+*/
+
+/* OBECNÉ STYLY  ---------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 1060px;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 1.5;
+    color: #333;
+    background: #FFF;
+    font-family: 'Merriweather', Georgia, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ODKAZY  ---------------- */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+a:hover,
+a:focus {
+    color: #f39c12;
+}
+
+#content a {
+    transition: 0.3s;
+}
+
+
+/* STRUKTURA STRÁNKY  ---------------- */
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#content {
+    position: relative;
+    float: right;
+    width: 800px;
+}
+
+
+/* HLAVIČKA STRÁNKY  ---------------- */
+
+header {
+    float: left;
+    width: 160px;
+    margin-bottom: 25px;
+}
+
+#logo {
+    display: block;
+    margin: 0 0 30px 0;
+    transition: 0.5s;
+    width: 120px;
+    height: 120px;
+    text-indent: -999em;
+    background: url("../img/logo-male.png") no-repeat 0 0;
+}
+
+#logo:hover {
+    opacity: 0.8;
+}
+
+/* NAVIGACE  ---------------- */
+
+nav {
+    width: 160px;
+    font-size: 1em;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: block;
+    line-height: 2em;
+}
+
+nav li a {
+    display: block;
+    height: 40px;
+    padding-left: 46px;
+    transition: 0.3s;
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+}
+
+nav li a:hover {
+    background-position: 5px 60%;
+}
+
+nav a:hover {
+    color: #f39c12;
+    font-style: italic;
+}
+
+/**#=id**/
+nav #home a {
+    background-image: url(../img/i-home.png);
+}
+
+nav #recepty a {
+    background-image: url(../img/i-blog.png);
+}
+
+nav #blogg a {
+    background-image: url(../img/i-recepty.png);
+}
+
+nav #eshop a {
+    background-image: url(../img/i-cart.png);
+}
+
+nav #kontakty a {
+    background-image: url(../img/i-kontakt.png);
+}
+
+/* UVODNI SLIDY  ---------------- */
+
+#uvod {
+    width: 100%;
+    height: 440px;
+}
+
+#slide {
+    position: relative;
+}
+
+#slideshow {
+    position: relative;
+}
+
+#slideshow > div {
+    position: absolute;
+
+}
+
+#uvod h1 {
+    position: absolute;
+    left: 0;
+    top: 220px;
+    padding: 10px 20px;
+    color: #000;
+    background: #FFF;
+    font-size: 1.5em;
+}
+
+#uvod h2 {
+    position: absolute;
+    left: 0;
+    top: 278px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #000;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+#uvod a:hover h1,
+#uvod a:hover h2 {
+    transition: 0.5s;
+}
+
+#uvod a:hover h1,
+#uvod a:hover h2 {
+    opacity: 0.8;
+}
+
+
+/* newsletter  ---------------- */
+
+#newsletter {
+    min-height: 72px;
+    margin-bottom: 40px;
+    border-top: 1px dashed #E5E5E5;
+    border-bottom: 1px dashed #E5E5E5;
+    line-height: 1em;
+    background: url(../img/i-news.png) no-repeat 10px 22px;
+}
+
+#newsletter p {
+    float: left;
+    width: 49%;
+    padding: 10px 20px 0 60px;
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+#newsletter form {
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+    display: inline;
+    font-size: 0.8em;
+}
+
+#newsletter input {
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 1px 1px 2px #F5F5F5;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+#newsletter input:hover {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    color: #fff;
+}
+
+#newsletter input#email {
+    width: 180px;
+}
+
+#newsletter #submit {
+    margin-left: 20px;
+}
+
+
+/* BLOG  ---------------- */
+#content h1 {
+    font-size: 1.3em;
+}
+
+#blog {
+    width: 100%;
+    clear: both;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+
+#blog article {
+    float: left;
+    width: 22.5%;
+    margin: 0 24px 25px 0;
+}
+
+#blog article img {
+    width: 100%;
+    background: #FFF;
+    overflow: hidden;
+    padding: 7px;
+    border: 1px solid #bdc3c7;
+    transition: 0.5s;
+}
+
+#blog article img:hover {
+    background: #FFF;
+    border: 1px solid #bdc3c7;
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+#blog article:nth-child(4) {
+    margin-right: 0;
+}
+
+#blog article h1 {
+    margin: 10px 0 10px;
+    line-height: 1.3em;
+    font-size: 1.1em;
+}
+
+#blog article p {
+    font-size: 0.9em;
+
+}
+
+#blog article p.datum {
+    margin-top: 20px;
+    color: #bdc3c7;
+}
+
+
+div.flexbox {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around; /*rovnoměrné rozložení (kolem)*/
+    align-items: stretch; /*default*/
+    flex-wrap: wrap;
+    flex-direction: row; /*default*/
+    height: 100%;
+
+
+}
+
+
+/*flex-items= jednotlivé položky, boxíky*/
+div.box {;
+    text-align: center;
+    margin: 25px;
+    width: 200px;
+}
+
+div.popisek {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+img.recept {
+    width: 100%
+}
+
+div.box:hover {
+    color: rgb(79, 140, 138);
+    opacity: 0.8;
+}
+
+
+/* ASIDE  soc. sítě  ---------------- */
+
+aside {
+    float: left;
+    width: 160px;
+}
+
+aside section {
+    display: block;
+    margin-bottom: 45px;
+    padding-right: 10px;
+}
+
+aside section h1 {
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    border-bottom: 1px dashed #E5E5E5;
+}
+
+aside section p {
+    margin-bottom: 10px;
+    line-height: 1.75em;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+aside a {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #1abc9c;
+    transition: 0.3s;
+}
+
+aside a:hover {
+    border: 1px solid #bdc3c7;
+    color: #bdc3c7;
+}
+
+/* FOOTER    ---------------- */
+
+footer {
+    clear: both;
+    position: relative;
+    min-height: 70px;
+    padding-top: 20px;
+    border-top: 2px solid #bdc3c7;
+    color: #bdc3c7;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+footer .social {
+
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+footer .social li {
+    margin-left: 10px;
+    float: left;
+    display: inline;
+}
+
+footer .social li a {
+    text-indent: -999em;
+    display: block;
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.3s;
+    opacity: 0.4;
+}
+
+footer .social li a:hover {
+    opacity: 1;
+}
+
+footer .twitter a {
+    background: url(../img/tw.png) no-repeat;
+}
+
+footer .facebook a {
+    background: url(../img/fb.png) no-repeat;
+}
+
+footer .youtube a {
+    background: url(../img/yt.png) no-repeat;
+}
