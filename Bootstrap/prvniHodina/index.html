@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Landing Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<!-- Navigace -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Moje Stránka</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Domů</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">O nás</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero sekce -->
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1>Vítejte na naší stránce!</h1>
+        <p class="lead">Bootstrap usnadňuje tvorbu moderních webů.</p>
+        <a href="#" class="btn btn-light btn-lg">Zjistit více</a>
+    </div>
+</header>
+
+<!-- Sekce s kartami -->
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card">
+                <img src="https://placehold.co/600x400" class="card-img-top" alt="Obrázek">
+                <div class="card-body">
+                    <h5 class="card-title">První služba</h5>
+                    <p class="card-text">Popis služby, kterou nabízíme.</p>
+                    <a href="#" class="btn btn-primary">Zjistit více</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card">
+                <img src="https://placehold.co/600x400" class="card-img-top" alt="Obrázek">
+                <div class="card-body">
+                    <h5 class="card-title">Druhá služba</h5>
+                    <p class="card-text">Popis další služby.</p>
+                    <a href="#" class="btn btn-primary">Zjistit více</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card">
+                <img src="https://placehold.co/600x400" class="card-img-top" alt="Obrázek">
+                <div class="card-body">
+                    <h5 class="card-title">Třetí služba</h5>
+                    <p class="card-text">Ještě jedna skvělá služba.</p>
+                    <a href="#" class="btn btn-primary">Zjistit více</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sekce o nás -->
+<section class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="https://placehold.co/600x400" class="img-fluid" alt="O nás">
+        </div>
+        <div class="col-md-6">
+            <h2>O nás</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn btn-primary">Zjistit více</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sekce ikon -->
+<section class="container my-5">
+    <div class="row text-center">
+        <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+                <i class="bi bi-lightbulb display-4 text-primary"></i>
+                <h3>Nápady</h3>
+                <p>Kreativní myšlenky, které posouvají weby dál.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+                <i class="bi bi-code-slash display-4 text-success"></i>
+                <h3>Kód</h3>
+                <p>Čistý a efektivní kód s Bootstrapem.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="d-flex flex-column align-items-center">
+                <i class="bi bi-rocket display-4 text-danger"></i>
+                <h3>Výkon</h3>
+                <p>Rychlý a responzivní design.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Patička -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2024 Moje stránka. Všechna práva vyhrazena.
+</footer>
+
+<!-- Import bootstrap js -->
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
