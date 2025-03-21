@@ -20,6 +20,8 @@
                 <li class="nav-item"><a class="nav-link" href="#">Domů</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">O nás</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                <li class="nav-item"><a href="#loginModal" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Přihlásit se</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -110,6 +112,40 @@
         </div>
     </div>
 </section>
+
+<!-- Modální okno -->
+<div class="modal modal-lg" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Přihlášení</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" novalidate>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Zadejte email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Heslo:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Zadejte heslo" required minlength="6">
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">
+                            Zapamatovat přihlašovací údaje
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Přihlásit se</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Patička -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
