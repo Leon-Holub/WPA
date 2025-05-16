@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Řešení - HTML & CSS Test (2. skupina)</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .content img {
+            width: 100vw;
+            height: 40vh;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+
+        .content a.btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .content a.btn:hover {
+            background-color: #1e7e34;
+        }
+
+        section {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        section p {
+            margin-bottom: 25px;
+        }
+
+        section p:nth-child(3) {
+            font-style: italic;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ddd;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+
+            nav ul li a {
+                color: #e0e0e0;
+            }
+        }
+
+        /* Responzivita pro tablet */
+        @media (max-width: 1024px) {
+            nav ul {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Hlavní</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <img src="https://placehold.co/1290x720/png" alt="Obrázek">
+    <p>Pro více informací klikněte <a href="#" class="btn">Zde</a></p>
+</div>
+
+<section>
+    <h2>Informace</h2>
+    <p>Toto je první odstavec se základními informacemi.</p>
+    <p>Toto je druhý odstavec s doplňujícími údaji.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025</p>
+</footer>
+
+</body>
+</html>
